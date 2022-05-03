@@ -25,6 +25,7 @@ for (let i = 0; i < secretWord.length; i++) {
 console.log(lettersArray.length);
 console.log(secretWord.length);
 
+//Aqui creamos un Array con guiones y unos "p" para cada letra
 const main = document.querySelector("main");
 
 const guionesArray = [];
@@ -34,8 +35,11 @@ for (let i = 0; i < secretWord.length; i++) {
   p.textContent = "_";
   guionesArray.push(p.textContent);
 }
-
 const guessLetter = "m";
+
+guionesArray[0] = "m";
+console.log(guionesArray); // [m, _,_, _,]
+//pantalla  _ _ _
 
 if (guessLetter === lettersArray[0]) {
   guionesArray[0] = guessLetter;
