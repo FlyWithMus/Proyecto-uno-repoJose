@@ -15,8 +15,8 @@
 // const random = Math.floor(Math.random() * palabras.length);
 
 // const secretWord = palabras[random]; //secretWord es la palabra random que tiene que aparecer en el texto
-const secretWord = "casa";
-const guessLetter = "a";
+// const secretWord = "casa";
+// const guessLetter = "a";
 const main = document.querySelector("main");
 
 //aqui convertimos la palabra en un array "lettersArray"
@@ -30,7 +30,7 @@ for (let i = 0; i < secretWord.length; i++) {
 console.log(lettersArray);
 console.log(secretWord.length);
 
-const guionesArray = [];
+// Aqui generamos otro array con tantos guiones como lettersArray
 for (let i = 0; i < secretWord.length; i++) {
   guionesArray.push("_");
 }
